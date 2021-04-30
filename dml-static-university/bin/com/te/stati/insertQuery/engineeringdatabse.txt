@@ -1,0 +1,29 @@
+
+->creating a database
+cretae database university;
+
+->use the databse to create a table
+use university;
+
+-> creating a table EngineeringStudent in mysql
+
+create table EngineeringStudents(
+     Student_id INT  NOT NULL,
+     Department VARCHAR(25),
+     first_name VARCHAR(25),
+     last_name VARCHAR(25),
+     passoutyear INT NOT NULL,
+     universityrank INT NOT NULL,
+     PRIMARY KEY(Student_id)
+);
+
+->updating the values in the table
+INSERT INTO EngineeringStudents VALUES(1,"ECE","BHARATH","KUMAR",2020,2563);
+INSERT INTO EngineeringStudents VALUES(2,"CIVIL","BHANU","BAILLA",2020,2563);
+INSERT INTO EngineeringStudents VALUES(3,"CSE","SREEJA","SAKU",2020,2563);
+INSERT INTO EngineeringStudents VALUES(4,"MECHANICAL","VENU","VAYU",2020,2552);
+INSERT INTO EngineeringStudents VALUES(5,"EEE","BHASKAR","BAJJI",2020,2563);
+
+->to see the content in the table 
+
+select * from EngineeringStudents;
